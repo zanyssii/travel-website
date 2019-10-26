@@ -17,35 +17,38 @@ const UserSchema = new Schema({
   age: { type: Number, required: true },
   gender: { type: String, required: true },
   activity: { type: String, required: true },
-  travel_goal: { type: Number },
-  exercise_progress: [
-    {
-      metric: { type: Number },
-      date: { type: Date },
-      date_string: String
-    }
-  ],
-  money_goal: Number,
-  money_progress: [
-    {
-      trip: { type: Number },
-      flight: { type: Number },
-      hotel: { type: Number },
-      food: { type: Number },
-      entertaiment: [{ type: Number }],
-      gifts: [{ type: Number }],
-      date: { type: Date },
-      date_string: String
-    }
-  ],
-  things_goal: { type: Number, default: 8 },
-  things_progress: [
-    {
-      metric: { type: Number },
-      date: { type: Date },
-      date_string: String
-    }
-  ]
+  
+  // travel_goal: { 
+  //   type: Number 
+  // },
+  // exercise_progress: [
+  //   {
+  //     metric: { type: Number },
+  //     date: { type: Date },
+  //     date_string: String
+  //   }
+  // ],
+  // money_goal: Number,
+  // money_progress: [
+  //   {
+  //     trip: { type: Number },
+  //     flight: { type: Number },
+  //     hotel: { type: Number },
+  //     food: { type: Number },
+  //     entertaiment: [{ type: Number }],
+  //     gifts: [{ type: Number }],
+  //     date: { type: Date },
+  //     date_string: String
+  //   }
+  // ],
+  // things_goal: { type: Number, default: 8 },
+  // things_progress: [
+  //   {
+  //     metric: { type: Number },
+  //     date: { type: Date },
+  //     date_string: String
+  //   }
+  // ]
 });
 
 // Execute before each user.save() call

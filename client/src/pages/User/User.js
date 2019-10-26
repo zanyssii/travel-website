@@ -44,9 +44,6 @@ class User extends Component {
           activity: res.data.activity
         }
       );
-      console.log(res.data);
-      console.log(moment().subtract(10,"days").format("YYYY-MMDD"));
-      console.log(this.state);
     });
   };
 

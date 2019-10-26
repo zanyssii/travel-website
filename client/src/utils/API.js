@@ -33,7 +33,6 @@ export default {
   },
 
   getFoodInfo: (food) => {
-    console.log('gettravelInfo')
     // return axios.get("hhttps://leopieters-iata-and-icao-v1.p.rapidapi.com/airlineDatabase"+trip+"&app_id=859c90a7&app_key=396a5766admshd0330f0efceaaf2p1f4194jsn1a2a70785233");
   }
  };

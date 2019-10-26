@@ -28,7 +28,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
 // LOGIN ROUTE
 app.post('/api/users/login', (req, res) => {
   auth
@@ -71,7 +70,6 @@ if (process.env.NODE_ENV === 'production') {
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-  console.log(__dirname);
 });
 
 module.exports = app;

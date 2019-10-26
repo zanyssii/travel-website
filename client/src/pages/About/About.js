@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Slide, Slider, Caption } from 'react-materialize';
-// import { Carousel } from 'react-responsive-carousel';
-
-// CSS
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './About.css';
 
@@ -14,16 +11,8 @@ const third = './assets/images/flight2.jpg';
 const fourth = './assets/images/travelicon.jpg';
 
 class About extends Component {
-
-  componentDidMount() {
-
-  };
-
-
   render() {
     return (
-
-
       <div className="mainWrapper" >
         <Slider className="slider">
           <Slide image={<img src={first} alt="Travel"/>}>
@@ -67,7 +56,6 @@ class About extends Component {
             </Caption>
           </Slide>
         </Slider>
-        
 
         <Container>
           <Row className="info">
@@ -87,7 +75,6 @@ class About extends Component {
             </Col>
           </Row>
         </Container>
-
       </div>
     );
   }

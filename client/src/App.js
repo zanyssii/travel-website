@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./pages/About";
-import week1 from "./pages/week1";
-import Week from "./pages/week2";
 import User from "./pages/User";
 import Nav from "./components/Nav";
+import TravelPlanner from "./pages/TravelPlanner";
 import Footer from "./components/Footer";
 
 import axios from "axios";
@@ -21,9 +20,9 @@ const App = () => (
       <Nav />
       <Switch>
         <Route exact path="/" component={About} />
+        <Route exact path="/travel-planner" component={TravelPlanner} />
         <Route exact path="/user" component={User} />
-        <Route exact path="/day" component={week1} />
-        <Route exact path="/week" component={Week} />
+        <Route exact path="*" component={About} />
       </Switch>
       <Footer />
     </div>
